@@ -6,8 +6,10 @@ export default function Page() {
   return (
     <div>
       <Navbar />
-      <Landing />   
-      <Info />   
+      <Landing />
+      <div className="hidden md:block">
+        <Info />
+      </div>
     </div>
   );
 }
