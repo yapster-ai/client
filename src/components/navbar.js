@@ -4,8 +4,9 @@ import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
-    <div className="fixed w-full">
-      <div className="mx-auto max-w-7xl">
+    <div className="fixed z-50 w-full">
+      <div className="mx-auto max-w-screen-2xl">
+        {/* max-w-screen-2xl : Note */}
         <div className="relative px-4 flex items-center justify-between">
           <div className="flex items-center gap-2 p-4">
             <img src="/icons/logo.svg" className="w-16" />
