@@ -2,10 +2,6 @@
 
 import { useState, useEffect } from "react";
 
-export const metadata = {
-  manifest: "/manifest.json",
-};
-
 const funnyMessages = [
   "Still loading... just like my motivation.",
   "Trying to finish this... but my brain is buffering.",
