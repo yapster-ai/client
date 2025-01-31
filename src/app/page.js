@@ -1,3 +1,7 @@
+"use client";
+
+import { useState, useEffect } from "react";
+
 export const metadata = {
   manifest: "/manifest.json",
 };
@@ -26,13 +30,20 @@ const funnyMessages = [
 ];
 
 const Page = () => {
-  const randomMessage =
-    funnyMessages[Math.floor(Math.random() * funnyMessages.length)];
+  const [randomMessage, setRandomMessage] = useState("");
+
+  useEffect(() => {
+    // Get a random message when component mounts
+    const message =
+      funnyMessages[Math.floor(Math.random() * funnyMessages.length)];
+    setRandomMessage(message);
+  }, []); // Empty dependency array means this runs once on mount
 
   return (
     <div className="w-full min-h-screen grid place-items-center bg-white dark:bg-gray-900">
       <h1 className="text-2xl leading-tight tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium text-gray-900 dark:text-gray-100 text-center px-4">
-        {randomMessage}
+        {randomMessage || "Loading..."}{" "}
+        {/* Fallback while message is being set */}
       </h1>
     </div>
   );
