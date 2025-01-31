@@ -7,10 +7,10 @@ const Landing = () => {
       <div className="hidden md:grid h-screen place-items-center pt-20">
         <div className="-mt-20">
           <div className="flex items-center gap-0 relative">
-            <div className="h-20 w-20 bg-muted rounded-full grid place-items-center relative z-10">
+            <div className="h-20 w-20 bg-white/10 rounded-full grid place-items-center relative z-10">
               <img src={"/icons/bolt.svg"} className="h-6" />
             </div>
-            <div className="h-20 w-20 -translate-x-6 bg-[#FF542C] rounded-full grid place-items-center relative z-20">
+            <div className="h-20 w-20 -translate-x-6 bg-[#EA580B] rounded-full grid place-items-center relative z-20">
               <img src={"/icons/line-dotted.svg"} className="w-8" />
             </div>
             <div className="text-center leading-none -translate-x-4">
@@ -21,7 +21,7 @@ const Landing = () => {
                 src={"/icons/light.png"}
                 className="w-full h-full object-fill"
               />
-              <div className="absolute w-12 h-12 rounded-full grid place-items-center bg-[#FF542C] drop-shadow-lg text-white -top-6 -left-6">
+              <div className="absolute w-12 h-12 rounded-full grid place-items-center bg-[#EA580B] drop-shadow-lg text-white -top-6 -left-6">
                 <img src="/icons/play.svg" className="w-3" />
               </div>
             </div>
@@ -35,7 +35,7 @@ const Landing = () => {
           <div className="min-w-full text-[6rem] leading-none mt-2">
             <p className="flex items-center gap-4">
               <span>shape</span>
-              <span className="h-20 w-20 bg-[#FFD629] rounded-full grid place-items-center mx-2">
+              <span className="h-20 w-20 bg-[#EA580B] rounded-full grid place-items-center mx-2">
                 <img src={"/icons/lines.svg"} className="w-5" />
               </span>
               <span>the future</span>
@@ -48,7 +48,7 @@ const Landing = () => {
       <div className="md:hidden min-h-screen p-4">
         <div className="grid grid-cols-2 gap-4 mt-16">
           {/* Analytics Title Card */}
-          <div className="col-span-2 bg-white rounded-3xl p-6 shadow-sm border">
+          <div className="col-span-2 bg-[#EA580B] rounded-3xl p-6 shadow-sm border">
             <div className="flex items-center gap-2">
               <div className="h-10 w-10 bg-muted rounded-full grid place-items-center">
                 <img src={"/icons/bolt.svg"} className="h-4" />

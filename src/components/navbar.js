@@ -14,7 +14,7 @@ const Navbar = () => {
           </div>
 
           <Button className="rounded-2xl px-6 py-6 text-sm">
-            Connect Wallet
+            Open App
           </Button>
         </div>
       </div>
