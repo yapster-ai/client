@@ -112,7 +112,7 @@ const Actions = () => {
       <div className="border-t mt-16 pt-16 grid grid-cols-12">
         <div className="col-span-8">
           Explore traffic sources, page behavior, conversions and more to gain
-          deep insight into your audience. With us, your business doesn't just
+          deep insight into your audience. With us, your business doesn&apos;t just
           adapt - it evolves
         </div>
         <div className="col-span-4 grid grid-cols-2 gap-4">
