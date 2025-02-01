@@ -1,4 +1,4 @@
-import { incoNetwork } from "./chains";
+import { mansepNetwork } from "./chains";
 
 export const privyConfig = {
   appId: "cm6m0pvh200ljic16kbrb82t1",
@@ -9,8 +9,8 @@ export const privyConfig = {
       // walletList: ["metamask", "detected_wallets", "rainbow"],
     },
     loginMethods: ["twitter"],
-    defaultChain: incoNetwork,
-    supportedChains: [incoNetwork],
+    defaultChain: mansepNetwork,
+    supportedChains: [mansepNetwork],
     embeddedWallets: {
       createOnLogin: "users-without-wallets",
     },
