@@ -1,8 +1,11 @@
-'use client'
+"use client";
 import Actions from "@/components/actions";
+import Footer from "@/components/footer";
 import Info from "@/components/info";
 import Landing from "@/components/landing";
+import MainAction from "@/components/main-action";
 import Navbar from "@/components/navbar";
+import { TweetGridDemo } from "@/components/tweet-demo";
 
 export default function Page() {
   return (
@@ -12,7 +15,9 @@ export default function Page() {
       <div className="hidden md:block">
         <Info />
         <Actions />
-        <div className="h-screen"></div>
+        <TweetGridDemo />
+        <MainAction />
+        <Footer />
       </div>
     </div>
   );

@@ -1,6 +1,9 @@
 "use client";
 import React from "react";
 import { Button } from "./ui/button";
+import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   return (
@@ -8,14 +11,17 @@ const Navbar = () => {
       <div className="mx-auto max-w-screen-2xl">
         {/* max-w-screen-2xl : Note */}
         <div className="relative px-4 flex items-center justify-between">
-          <div className="flex items-center gap-2 p-4">
+          <Link href={"/"} className="flex items-center gap-2 p-4">
             <img src="/icons/logo.svg" className="w-16" />
             <p className="-mt-4 text-xl font-medium">yapster.ai</p>
-          </div>
+          </Link>
 
-          <Button className="rounded-2xl px-6 py-6 text-sm">
+          <Link
+            href={"/app"}
+            className={cn(buttonVariants(), "rounded-2xl px-6 py-6 text-sm")}
+          >
             Open App
-          </Button>
+          </Link>
         </div>
       </div>
     </div>
