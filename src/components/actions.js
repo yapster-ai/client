@@ -2,7 +2,7 @@ import { LineChart } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 import { Button } from "./ui/button";
 
-const Actions = () => {
+const Actions = ({ isOpen, setIsOpen }) => {
   const textRef = useRef(null);
   const containerRef = useRef(null);
   const [textPosition, setTextPosition] = useState(0);
@@ -111,13 +111,19 @@ const Actions = () => {
       <div className="border-t mt-16 pt-16 grid grid-cols-12">
         <div className="col-span-6 text-muted-foreground font-light">
           Explore traffic sources, page behavior, conversions and more to gain
-          deep insight into your audience. With us, your business doesn&apos;t just
-          adapt - it evolves
+          deep insight into your audience. With us, your business doesn&apos;t
+          just adapt - it evolves
         </div>
         <div className="col-span-2"></div>
         <div className="col-span-4 grid grid-cols-2 gap-4">
-          <Button variant="secondary" className='rounded-xl'>Request a demo</Button>
-          <Button className='rounded-xl'>Start for free</Button>
+          <Button
+            variant="secondary"
+            className="rounded-xl"
+            onClick={() => setIsOpen(true)}
+          >
+            View demo
+          </Button>
+          <Button className="rounded-xl">Open App</Button>
         </div>
       </div>
     </div>

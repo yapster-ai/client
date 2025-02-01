@@ -2,7 +2,7 @@ import { Link as LinkIcon } from "lucide-react";
 import React from "react";
 import { Button } from "./ui/button";
 
-const MainAction = () => {
+const MainAction = ({ isOpen, setIsOpen }) => {
   return (
     <div className="min-h-screen grid place-items-center">
       <div className=" flex w-full items-center justify-center flex-col">
@@ -10,16 +10,20 @@ const MainAction = () => {
           <LinkIcon size={35} />
         </div>
 
-        <p className=" text-[7rem]">Get Started</p>
+        <p className=" text-[7rem]">Get Verified</p>
         <p className="max-w-xs font-light text-center text-muted-foreground">
           Turn information into advantage! Start using Ramos today. Sign up for
           a free trial.
         </p>
         <div className="w-full flex items-center gap-2 justify-center mt-8">
-          <Button variant="secondary" className="rounded-xl text-xs">
-            Request a demo
+          <Button
+            variant="secondary"
+            className="rounded-xl"
+            onClick={() => setIsOpen(true)}
+          >
+            View demo
           </Button>
-          <Button className="rounded-xl text-xs">Start for free</Button>
+          <Button className="rounded-xl">Open App</Button>
         </div>
       </div>
     </div>

@@ -4,9 +4,10 @@ const Landing = () => {
   return (
     <div>
       {/* Desktop Layout */}
-      <div className="hidden md:grid h-screen place-items-center pt-20">
-        <div className="-mt-20">
-          <div className="flex items-center gap-0 relative">
+      <div className="hidden md:flex flex-col h-screen items-center justify-center pt-20">
+        <div className="flex flex-col items-center -mt-20">
+          {/* Icon Group */}
+          <div className="flex items-center justify-center relative">
             <div className="h-20 w-20 bg-white/10 rounded-full grid place-items-center relative z-10">
               <img src={"/icons/bolt.svg"} className="h-6" />
             </div>
@@ -14,31 +15,26 @@ const Landing = () => {
               <img src={"/icons/line-dotted.svg"} className="w-8" />
             </div>
             <div className="text-center leading-none -translate-x-4">
-              <p className="text-[6rem] font-medium">Analytics</p>
-            </div>
-            <div className="absolute w-60 rounded-b-2xl rounded-r-2xl h-48 top-0 bg-black right-0">
-              <img
-                src={"/icons/light.png"}
-                className="w-full h-full object-fill"
-              />
-              <div className="absolute w-12 h-12 rounded-full grid place-items-center bg-[#EA580B] drop-shadow-lg text-white -top-6 -left-6">
-                <img src="/icons/play.svg" className="w-3" />
-              </div>
+              <p className="text-[6rem] font-medium">Verified yaps</p>
             </div>
           </div>
-          <div className="min-w-full text-[6rem] leading-none mt-2">
-            <p className="flex items-center -ml-24">
-              <span>that</span>{" "}
-              <span className="text-muted-foreground/30 mx-4">helps</span> you
+
+          {/* Main Text */}
+          <div className="text-[6rem] leading-none mt-2 text-center">
+            <p className="flex items-center justify-center">
+              <span>that</span>
+              <span className="text-muted-foreground/30 mx-4">helps</span>
+              <span>you get</span>
             </p>
           </div>
-          <div className="min-w-full text-[6rem] leading-none mt-2">
-            <p className="flex items-center gap-4">
-              <span>shape</span>
+
+          <div className="text-[6rem] leading-none mt-2 text-center">
+            <p className="flex items-center justify-center gap-4">
+              verfied
               <span className="h-20 w-20 bg-[#EA580B] rounded-full grid place-items-center mx-2">
                 <img src={"/icons/lines.svg"} className="w-5" />
               </span>
-              <span>the future</span>
+              attention
             </p>
           </div>
         </div>

@@ -10,10 +10,10 @@ const Navbar = () => {
     <div className="fixed z-50 w-full">
       <div className="mx-auto max-w-screen-2xl">
         {/* max-w-screen-2xl : Note */}
-        <div className="relative px-4 flex items-center justify-between">
+        <div className="relative px-4 pr-6 flex items-center justify-between">
           <Link href={"/"} className="flex items-center gap-2 p-4">
             <img src="/icons/logo.svg" className="w-16" />
-            <p className="-mt-4 text-xl font-medium">yapster.ai</p>
+            <p className="-mt-8 text-xl font-medium">yapster.ai</p>
           </Link>
 
           <Link
