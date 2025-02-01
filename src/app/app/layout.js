@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
     <div>
       <PrivyWrapper>
         <Auth>{children}</Auth>
-      </PrivyWrapper>{" "}
+      </PrivyWrapper>
     </div>
   );
 }

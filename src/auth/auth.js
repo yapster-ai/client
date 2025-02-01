@@ -1,25 +1,22 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import { usePrivy } from "@privy-io/react-auth";
-import { Loader } from "lucide-react";
 import React from "react";
+import WalletConnect from "./wallet-connect";
+import Loader from "@/components/loader";
 
 const Auth = ({ children }) => {
-  const { authenticated, ready, login } = usePrivy();
+  const { authenticated, ready, login, user } = usePrivy();
+
+  console.log(user);
 
   if (!ready)
     return (
-      <div>
+      <div className="min-h-screen flex items-center justify-center">
         <Loader />
       </div>
     );
 
-  if (!authenticated)
-    return (
-      <div>
-        <Button onClick={login}>Connect Wallet</Button>
-      </div>
-    );
+  if (!authenticated) return <WalletConnect login={login} />;
   return <div>{children}</div>;
 };
 

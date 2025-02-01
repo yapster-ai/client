@@ -9,7 +9,6 @@ const Actions = () => {
   const [isInView, setIsInView] = useState(false);
   const [maxScroll, setMaxScroll] = useState(0);
 
-  // Calculate the maximum scroll distance based on text and container widths
   useEffect(() => {
     if (textRef.current && containerRef.current) {
       const textWidth = textRef.current.offsetWidth;
