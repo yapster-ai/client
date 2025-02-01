@@ -1,11 +1,11 @@
-import { Poppins } from "next/font/google";
+import { Cabin } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const poppins = Poppins({
+const cabin = Cabin({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700"],
+  // variable: "--font-cabin",
 });
 
 export const metadata = {
@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} antialiased`}>
+      <body className={`${cabin.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
