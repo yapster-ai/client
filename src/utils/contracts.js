@@ -1,4 +1,4 @@
-export const AI_CONTRACT_ADDRESS = "0xC25761bb16F45Fe7ea6df488D2A4CFc71A52b2B0";
+export const AI_CONTRACT_ADDRESS = "0x563443797a20950cb5E8B63eB902c614820d2969";
 
 export const AI_CONTRACT_ABI = [
   {
@@ -37,16 +37,30 @@ export const AI_CONTRACT_ABI = [
     name: "calculateYaps",
     inputs: [
       { name: "modelId", type: "uint256", internalType: "uint256" },
-      { name: "input", type: "bytes", internalType: "bytes" },
+      { name: "input", type: "string", internalType: "string" },
     ],
     outputs: [],
     stateMutability: "payable",
   },
   {
     type: "function",
+    name: "callbackGasLimit",
+    inputs: [{ name: "", type: "uint256", internalType: "uint256" }],
+    outputs: [{ name: "", type: "uint64", internalType: "uint64" }],
+    stateMutability: "view",
+  },
+  {
+    type: "function",
     name: "erc7007",
     inputs: [],
     outputs: [{ name: "", type: "address", internalType: "contract ERC7007" }],
+    stateMutability: "view",
+  },
+  {
+    type: "function",
+    name: "estimateFee",
+    inputs: [{ name: "modelId", type: "uint256", internalType: "uint256" }],
+    outputs: [{ name: "", type: "uint256", internalType: "uint256" }],
     stateMutability: "view",
   },
   {

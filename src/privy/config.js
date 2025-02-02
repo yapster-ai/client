@@ -1,4 +1,4 @@
-import { mansepNetwork } from "./chains";
+import { baseSepNetwork } from "./chains";
 
 export const privyConfig = {
   appId: "cm6m0pvh200ljic16kbrb82t1",
@@ -9,8 +9,8 @@ export const privyConfig = {
       // walletList: ["metamask", "detected_wallets", "rainbow"],
     },
     loginMethods: ["twitter"],
-    defaultChain: mansepNetwork,
-    supportedChains: [mansepNetwork],
+    defaultChain: baseSepNetwork,
+    supportedChains: [baseSepNetwork],
     embeddedWallets: {
       createOnLogin: "users-without-wallets",
     },
