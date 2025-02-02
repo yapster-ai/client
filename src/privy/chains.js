@@ -1,24 +1,24 @@
-export const baseSepNetwork = {
-  id: 84532,
-  network: "Base Sepolia",
-  name: "Base Sepolia Testnet",
+export const mantleNetwork = {
+  id: 5000,
+  network: "Mantle",
+  name: "Mantle Network",
   nativeCurrency: {
-    name: "ETH",
-    symbol: "ETH", 
+    name: "MNT",
+    symbol: "MNT",
     decimals: 18,
   },
   rpcUrls: {
     default: {
-      http: ["https://sepolia.base.org"],
+      http: ["https://rpc.mantle.xyz"],
     },
     public: {
-      http: ["https://sepolia.base.org"],
+      http: ["https://rpc.mantle.xyz"],
     },
   },
   blockExplorers: {
     default: {
       name: "Explorer",
-      url: "https://sepolia-explorer.base.org",
+      url: "https://mantlescan.xyz",
     },
   },
 };

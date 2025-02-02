@@ -1,4 +1,4 @@
-export const AI_CONTRACT_ADDRESS = "0x563443797a20950cb5E8B63eB902c614820d2969";
+export const AI_CONTRACT_ADDRESS = "0xe028b3615CE34bF1938c00FBfB0817abc8ff6565";
 
 export const AI_CONTRACT_ABI = [
   {
@@ -37,7 +37,8 @@ export const AI_CONTRACT_ABI = [
     name: "calculateYaps",
     inputs: [
       { name: "modelId", type: "uint256", internalType: "uint256" },
-      { name: "input", type: "string", internalType: "string" },
+      { name: "userInput", type: "string", internalType: "string" },
+      { name: "userAddress", type: "address", internalType: "address" },
     ],
     outputs: [],
     stateMutability: "payable",
@@ -83,6 +84,16 @@ export const AI_CONTRACT_ABI = [
     inputs: [{ name: "", type: "uint256", internalType: "uint256" }],
     outputs: [{ name: "", type: "bytes", internalType: "bytes" }],
     stateMutability: "view",
+  },
+  {
+    type: "function",
+    name: "setCallbackGasLimit",
+    inputs: [
+      { name: "modelId", type: "uint256", internalType: "uint256" },
+      { name: "gasLimit", type: "uint64", internalType: "uint64" },
+    ],
+    outputs: [],
+    stateMutability: "nonpayable",
   },
   {
     type: "event",

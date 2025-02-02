@@ -167,7 +167,7 @@ export const MintComponent = () => {
 
       const wallet = new ethers.Wallet(privateKey);
 
-      const provider = new ethers.JsonRpcProvider("https://sepolia.base.org");
+      const provider = new ethers.JsonRpcProvider("https://rpc.mantle.xyz");
       const signer = wallet.connect(provider);
 
       const contract = new Contract(
@@ -201,7 +201,7 @@ export const MintComponent = () => {
         }
       );
       // Add your minting logic here
-      return;
+      // return;
       localStorage.setItem("mintingStatus", "completed");
       window.location.reload();
     } catch (err) {
